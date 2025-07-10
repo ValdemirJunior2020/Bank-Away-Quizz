@@ -5,7 +5,8 @@ import QuizPage from "./pages/QuizPage";
 import Leaderboard from "./pages/Leaderboard";
 import Navbar from "./components/Navbar";
 import TrainingGuide from "./pages/TrainingGuide";
-
+import LoginPage from "./pages/LoginPage";
+import ResultsPage from "./pages/ResultsPage";
 function App() {
   return (
     <Router>
@@ -15,6 +16,8 @@ function App() {
         <Route path="/" element={<AgentForm />} />
         <Route path="/quiz" element={<QuizPage />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/login" element={<LoginPage />} />
+<Route path="/results" element={<ResultsPage />} />
       </Routes>
     </Router>
   );
